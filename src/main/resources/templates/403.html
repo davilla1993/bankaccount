@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org"
+       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"  layout:decorate="template1">
+       
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Bank Account</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}"/>
+	</head>
+	<body>
+		
+		<div layout:fragment="content">
+		
+			<div class="col-md-6 col-md-offset-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading">Problème d'autorisation</div>
+					<div class="panel-body">
+					
+						<div class="text-danger">Vous n'avez pas l'autorisation nécessaire pour accéder à la ressource demandée</div>
+						
+					</div>
+				</div>			
+			</div>		 	
+		</div>
+		
+	</body>
+</html>
